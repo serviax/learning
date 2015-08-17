@@ -1,0 +1,15 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+    font-style: italic;
+}
+
+span.sortOrder:after{
+        content: '\25b2';
+}
+
+span.descending:after{
+        content: '\25bc\25bc';
+}
