@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Ng\u00f2vya",
       "Lubingu"
     ],
-    "ERANAMES": [
-      "Kumpala kwa Yezu Kli",
-      "Kunyima kwa Yezu Kli"
-    ],
-    "ERAS": [
-      "kmp. Y.K.",
-      "kny. Y. K."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Ciongo",
       "L\u00f9ishi",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Lun",
       "Kas",
       "Cis"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE d MMMM y",
     "longDate": "d MMMM y",

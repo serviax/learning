@@ -6,10 +6,38 @@ span {
     font-style: italic;
 }
 
-span.sortOrder:after{
+    span.sortOrder:after {
         content: '\25b2';
+    }
+
+    span.descending:after {
+        content: '\25bc';
+    }
+
+
+.results {
+    border : 1px solid black;
 }
 
-span.descending:after{
-        content: '\25bc\25bc';
+.results.ng-enter {
+    transition : linear all 0.4s;
+    opacity : 0.1;
+}
+
+.results.ng-enter-active {
+    opacity : 1;
+}
+
+.error {
+    border : 1px solid black;
+    background-color : #A0A0A0;
+}
+
+.error.ng-enter {
+    transition : linear all 1.5s;
+    opacity : 0.1;
+}
+
+.error.ng-enter-active {
+    opacity : 1;
 }

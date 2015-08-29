@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "piatok",
       "sobota"
     ],
-    "ERANAMES": [
-      "pred Kristom",
-      "po Kristovi"
-    ],
-    "ERAS": [
-      "pred Kr.",
-      "po Kr."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "janu\u00e1ra",
       "febru\u00e1ra",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "okt",
       "nov",
       "dec"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d. MMMM y",
     "longDate": "d. MMMM y",

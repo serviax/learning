@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Asimwas",
       "Asi\u1e0dyas"
     ],
-    "ERANAMES": [
-      "Zdat \u0190isa (TA\u0194)",
-      "\u1e0ceffir \u0190isa (TA\u0194)"
-    ],
-    "ERAS": [
-      "Z\u0190",
-      "\u1e0c\u0190"
-    ],
-    "FIRSTDAYOFWEEK": 5,
     "MONTH": [
       "Yennayer",
       "Yebrayer",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "K\u1e6du",
       "Nwa",
       "Duj"
-    ],
-    "WEEKENDRANGE": [
-      4,
-      5
     ],
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",

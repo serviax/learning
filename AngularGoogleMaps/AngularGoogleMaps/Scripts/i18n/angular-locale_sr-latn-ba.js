@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "petak",
       "subota"
     ],
-    "ERANAMES": [
-      "Pre nove ere",
-      "Nove ere"
-    ],
-    "ERAS": [
-      "p. n. e.",
-      "n. e."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "januar",
       "februar",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "okt",
       "nov",
       "dec"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, dd. MMMM y.",
     "longDate": "dd. MMMM y.",

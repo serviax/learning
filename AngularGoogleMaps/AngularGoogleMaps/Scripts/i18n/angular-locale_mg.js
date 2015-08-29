@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Zoma",
       "Asabotsy"
     ],
-    "ERANAMES": [
-      "Alohan\u2019i JK",
-      "Aorian\u2019i JK"
-    ],
-    "ERAS": [
-      "BC",
-      "AD"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Janoary",
       "Febroary",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Okt",
       "Nov",
       "Des"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE d MMMM y",
     "longDate": "d MMMM y",

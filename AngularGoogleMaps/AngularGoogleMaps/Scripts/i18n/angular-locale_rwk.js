@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Ijumaa",
       "Jumamosi"
     ],
-    "ERANAMES": [
-      "Kabla ya Kristu",
-      "Baada ya Kristu"
-    ],
-    "ERAS": [
-      "KK",
-      "BK"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Januari",
       "Februari",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Okt",
       "Nov",
       "Des"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",

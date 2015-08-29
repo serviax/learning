@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "DihAoine",
       "DiSathairne"
     ],
-    "ERANAMES": [
-      "Ro Chr\u00ecosta",
-      "An d\u00e8idh Chr\u00ecosta"
-    ],
-    "ERAS": [
-      "RC",
-      "AD"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "dhen Fhaoilleach",
       "dhen Ghearran",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "D\u00e0mh",
       "Samh",
       "D\u00f9bh"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d'mh' MMMM y",
     "longDate": "d'mh' MMMM y",

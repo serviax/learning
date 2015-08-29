@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Ijumaa",
       "Jumamosi"
     ],
-    "ERANAMES": [
-      "Hinapiya yesu",
-      "Yopia yesu"
-    ],
-    "ERAS": [
-      "HY",
-      "YY"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Mweri wo kwanza",
       "Mweri wo unayeli",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Kum",
       "Moj",
       "Yel"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",

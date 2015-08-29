@@ -16,15 +16,6 @@ $provide.value("$locale", {
       "ostirala",
       "larunbata"
     ],
-    "ERANAMES": [
-      "K.a.",
-      "K.o."
-    ],
-    "ERAS": [
-      "K.a.",
-      "K.o."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "urtarrilak",
       "otsailak",
@@ -61,10 +52,6 @@ $provide.value("$locale", {
       "urr.",
       "aza.",
       "abe."
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "y('e')'ko' MMMM d, EEEE",
     "longDate": "y('e')'ko' MMMM d",

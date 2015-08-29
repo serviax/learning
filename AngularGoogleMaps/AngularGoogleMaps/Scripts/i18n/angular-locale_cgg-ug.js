@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Orwakataano",
       "Orwamukaaga"
     ],
-    "ERANAMES": [
-      "Kurisito Atakaijire",
-      "Kurisito Yaijire"
-    ],
-    "ERAS": [
-      "BC",
-      "AD"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Okwokubanza",
       "Okwakabiri",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "KKM",
       "KNK",
       "KNB"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",

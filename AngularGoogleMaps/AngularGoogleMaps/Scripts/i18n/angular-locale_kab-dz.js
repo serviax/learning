@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "S\u1e0disass",
       "Sayass"
     ],
-    "ERANAMES": [
-      "send talalit n \u0190isa",
-      "seld talalit n \u0190isa"
-    ],
-    "ERAS": [
-      "snd. T.\u0190",
-      "sld. T.\u0190"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Yennayer",
       "Fu\u1e5bar",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Tub",
       "Nun",
       "Du\u01e7"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE d MMMM y",
     "longDate": "d MMMM y",

@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Jeheiney",
       "Jesarn"
     ],
-    "ERANAMES": [
-      "RC",
-      "AD"
-    ],
-    "ERAS": [
-      "RC",
-      "AD"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Jerrey-geuree",
       "Toshiaght-arree",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "J-fouyir",
       "M.Houney",
       "M.Nollick"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE dd MMMM y",
     "longDate": "dd MMMM y",

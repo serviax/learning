@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "fi\u0256a",
       "memle\u0256a"
     ],
-    "ERANAMES": [
-      "Hafi Yesu Va Do \u014bg\u0254",
-      "Yesu \u014a\u0254li"
-    ],
-    "ERAS": [
-      "hY",
-      "Y\u014b"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "dzove",
       "dzodze",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "kel",
       "ade",
       "dzm"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, MMMM d 'lia' y",
     "longDate": "MMMM d 'lia' y",

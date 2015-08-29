@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "pi\u0105tek",
       "sobota"
     ],
-    "ERANAMES": [
-      "p.n.e.",
-      "n.e."
-    ],
-    "ERAS": [
-      "p.n.e.",
-      "n.e."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "stycznia",
       "lutego",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "pa\u017a",
       "lis",
       "gru"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",

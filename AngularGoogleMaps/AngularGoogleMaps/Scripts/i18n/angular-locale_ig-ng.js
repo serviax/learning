@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Fra\u1ecbdee",
       "Sat\u1ecddee"
     ],
-    "ERANAMES": [
-      "Tupu Kristi",
-      "Af\u1ecd Kristi"
-    ],
-    "ERAS": [
-      "T.K.",
-      "A.K."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Jen\u1ee5war\u1ecb",
       "Febr\u1ee5war\u1ecb",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "\u1ecckt",
       "Nov",
       "Dis"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",

@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "perjantaina",
       "lauantaina"
     ],
-    "ERANAMES": [
-      "ennen Kristuksen syntym\u00e4\u00e4",
-      "j\u00e4lkeen Kristuksen syntym\u00e4n"
-    ],
-    "ERAS": [
-      "eKr.",
-      "jKr."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "tammikuuta",
       "helmikuuta",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "lokakuuta",
       "marraskuuta",
       "joulukuuta"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "cccc d. MMMM y",
     "longDate": "d. MMMM y",

@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "penktadienis",
       "\u0161e\u0161tadienis"
     ],
-    "ERANAMES": [
-      "prie\u0161 Krist\u0173",
-      "po Kristaus"
-    ],
-    "ERAS": [
-      "pr. Kr.",
-      "po Kr."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "sausio",
       "vasario",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "spal.",
       "lapkr.",
       "gruod."
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "y 'm'. MMMM d 'd'., EEEE",
     "longDate": "y 'm'. MMMM d 'd'.",

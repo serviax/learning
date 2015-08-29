@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "vandredi",
       "samdi"
     ],
-    "ERANAMES": [
-      "avan Zezi-Krist",
-      "apre Zezi-Krist"
-    ],
-    "ERAS": [
-      "av. Z-K",
-      "ap. Z-K"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "zanvie",
       "fevriye",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "okt",
       "nov",
       "des"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE d MMMM y",
     "longDate": "d MMMM y",

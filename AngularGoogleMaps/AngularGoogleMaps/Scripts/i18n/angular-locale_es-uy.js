@@ -16,15 +16,6 @@ $provide.value("$locale", {
       "viernes",
       "s\u00e1bado"
     ],
-    "ERANAMES": [
-      "antes de Cristo",
-      "despu\u00e9s de Cristo"
-    ],
-    "ERAS": [
-      "a. C.",
-      "d. C."
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "enero",
       "febrero",
@@ -61,10 +52,6 @@ $provide.value("$locale", {
       "oct.",
       "nov.",
       "dic."
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d 'de' MMMM 'de' y",
     "longDate": "d 'de' MMMM 'de' y",

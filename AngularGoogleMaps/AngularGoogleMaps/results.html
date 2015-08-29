@@ -1,0 +1,16 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th ng-click="orderBy('formatted_address')">Name<span class="sortOrder" ng-show="orderStatement == 'formatted_address'" ng-class="{'descending' : reverseOrder}"></span></th>
+            <th ng-click="orderBy('geometry.location.lat')">Latitude<span class="sortOrder" ng-show="orderStatement == 'geometry.location.lat'" ng-class="{'descending' : reverseOrder}"></span></th>
+            <th ng-click="orderBy('geometry.location.lng')">Longitude<span class="sortOrder" ng-show="orderStatement == 'geometry.location.lng'" ng-class="{'descending' : reverseOrder}"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="result in results | orderBy:orderStatement:reverseOrder">
+            <td>{{result.formatted_address}}</td>
+            <td>{{result.geometry.location.lat}}</td>
+            <td>{{result.geometry.location.lng}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Chishanu",
       "Sabudu"
     ],
-    "ERANAMES": [
-      "Antes de Cristo",
-      "Anno Domini"
-    ],
-    "ERAS": [
-      "AC",
-      "AD"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "Janeiro",
       "Fevreiro",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Otu",
       "Nov",
       "Dec"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE, d 'de' MMMM 'de' y",
     "longDate": "d 'de' MMMM 'de' y",

@@ -34,15 +34,6 @@ $provide.value("$locale", {
       "Alzuma",
       "Asibti"
     ],
-    "ERANAMES": [
-      "Isaa jine",
-      "Isaa zamanoo"
-    ],
-    "ERAS": [
-      "IJ",
-      "IZ"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
       "\u017danwiye",
       "Feewiriye",
@@ -79,10 +70,6 @@ $provide.value("$locale", {
       "Okt",
       "Noo",
       "Dee"
-    ],
-    "WEEKENDRANGE": [
-      5,
-      6
     ],
     "fullDate": "EEEE d MMMM y",
     "longDate": "d MMMM y",
