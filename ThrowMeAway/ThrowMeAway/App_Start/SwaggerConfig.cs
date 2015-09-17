@@ -1,12 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
-using AngularGoogleMaps;
+using ThrowMeAway;
 using Swashbuckle.Application;
-using System;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace AngularGoogleMaps
+namespace ThrowMeAway
 {
     public class SwaggerConfig
     {
@@ -14,7 +13,7 @@ namespace AngularGoogleMaps
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
 
-            GlobalConfiguration.Configuration
+            GlobalConfiguration.Configuration 
                 .EnableSwagger(c =>
                     {
                         // By default, the service root url is inferred from the request used to access the docs.
@@ -33,9 +32,9 @@ namespace AngularGoogleMaps
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "AngularGoogleMaps");
+                        c.SingleApiVersion("v1", "ThrowMeAway");
 
-                        //c.IncludeXmlComments(GetXmlCommentsPath());
+                        c.IncludeXmlComments(string.Format("{0}\\bin\\ThrowMeAway.XML", System.AppDomain.CurrentDomain.BaseDirectory));
 
                         // If your API has multiple versions, use "MultipleApiVersions" instead of "SingleApiVersion".
                         // In this case, you must provide a lambda that tells Swashbuckle which actions should be
@@ -217,12 +216,6 @@ namespace AngularGoogleMaps
                         //
                         //c.EnableOAuth2Support("test-client-id", "test-realm", "Swagger UI");
                     });
-        }
-
-        private static string GetXmlCommentsPath()
-        {
-            var path = string.Format(@"{0}bin\Services.XML", AppDomain.CurrentDomain.BaseDirectory);
-            return path;
         }
     }
 }

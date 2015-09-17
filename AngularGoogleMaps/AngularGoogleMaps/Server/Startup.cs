@@ -13,27 +13,39 @@ namespace AngularGoogleMaps
         {
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
 
-            var config = new HttpConfiguration();
-            config.Formatters.Add(new JsonHalMediaTypeFormatter());
-            config.Formatters.Add(new XmlHalMediaTypeFormatter());
+            //var config = new HttpConfiguration();
+            //config.Formatters.Add(new JsonHalMediaTypeFormatter());
+            //config.Formatters.Add(new XmlHalMediaTypeFormatter());
 
-            config.MapHttpAttributeRoutes();
+            //config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-              );
+            //config.Routes.MapHttpRoute(
+            //    name: "DefaultApi",
+            //    routeTemplate: "api/{controller}/{id}",
+            //    defaults: new { id = RouteParameter.Optional }
+            //  );
+
+            //config.Routes.MapHttpRoute(
+            //name: "Swagger",
+            //routeTemplate: "api/swagger",
+            //defaults: new
+            //{
+            //    controller = "Swagger",
+            //    action = "Get",
+            //});
+
+            //var swaggerConfig = new SwaggerConfig();
 
             //config
             //    .EnableSwagger(c => c.SingleApiVersion("v1", "My own api"))
             //    .EnableSwaggerUi();
 
-            app.UseWebApi(config);
+            //app.UseWebApi(config);
+
+            //swaggerConfig.Register();
 
             //app.Run(Configure);
         }
-
         //private void ConfigureSwagger(SwaggerDocsConfig configuration)
         //{
 

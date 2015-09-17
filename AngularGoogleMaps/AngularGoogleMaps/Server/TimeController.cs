@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Http;
+using System.Web.Http.Description;
 
 namespace AngularGoogleMaps.Server
 {
@@ -15,7 +16,14 @@ namespace AngularGoogleMaps.Server
         /// </summary>
         /// <returns>current time</returns>
         [Route("get-time")]
-        public string GetCurrentTime()
+        //[ResponseType(typeof(string))]
+        [HttpGet]
+        public string GetCurrentTime([FromUri] string name)
+        {
+            return DateTime.Now.ToString();
+        }
+
+        public string Get()
         {
             return DateTime.Now.ToString();
         }
