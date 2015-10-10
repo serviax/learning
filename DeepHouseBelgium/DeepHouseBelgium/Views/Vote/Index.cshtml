@@ -1,0 +1,22 @@
+﻿<div ng-app="DeepHouseBelgiumApp">
+
+    <div ng-controller="voteController">
+        <div class="alert alert-danger">{{currentTime}}</div>
+
+        <div ng-show="voteOptions">
+            <form ng-submit="saveOption(selectedOption)">
+                <p>This is the form</p>
+                <div class="input-group" ng-repeat="voteOption in voteOptions">
+                    <span class="input-group-addon">
+                        <input type="radio" name="option" class="radio-inline" ng-model="$parent.selectedOption" ng-value="voteOption.Name" ng-trim="true" />
+                    </span>
+                    <p class="form-control">{{voteOption.Name}}</p>
+                </div>
+
+                <input type="submit" value="send" class="btn btn-default btn-primary" />
+                <input type="reset" value="reset" class="btn" />
+            </form>
+        </div>
+
+    </div>
+</div>
