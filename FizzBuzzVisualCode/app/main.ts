@@ -1,5 +1,5 @@
 import { bootstrap }    from '@angular/platform-browser-dynamic';
 
-import { AppComponent } from './app.component';
+import { FizzBuzzListComponent } from './fizz-buzz-list.component';
 
-bootstrap(AppComponent);
+bootstrap(FizzBuzzListComponent);

@@ -9,17 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var fizz_buzz_service_1 = require('./fizz-buzz-service');
+var FizzBuzzListComponent = (function () {
+    function FizzBuzzListComponent(service) {
+        this.service = service;
     }
-    AppComponent = __decorate([
+    FizzBuzzListComponent.prototype.ngOnInit = function () {
+        this.printoutValue = this.service.CalculateValue(3);
+    };
+    FizzBuzzListComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>My First Angular 2 App running at' + new Date().toISOString() + '</h1>',
+            selector: 'fizz-buzz-app',
+            templateUrl: 'app/fizz-buzz-template.html',
+            providers: [fizz_buzz_service_1.FizzBuzzService]
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [fizz_buzz_service_1.FizzBuzzService])
+    ], FizzBuzzListComponent);
+    return FizzBuzzListComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.FizzBuzzListComponent = FizzBuzzListComponent;
+//# sourceMappingURL=fizz-buzz-list.component.js.map
