@@ -9,13 +9,18 @@ import { FizzBuzzService } from './fizz-buzz-service';
 })
 
 export class FizzBuzzListComponent implements OnInit {
-    constructor(private service: FizzBuzzService)
+    constructor(private fizzBuzzService: FizzBuzzService)
     {
     }
     
     printoutValue: string;
+    inputValue: string;
     
     ngOnInit() { 
-        this.printoutValue = this.service.CalculateValue(3);
+        this.printoutValue = "";
+        }
+    
+    OnValueChanged(testValue:string) {
+        this.printoutValue = this.fizzBuzzService.CalculateValue(testValue);
     }
 }

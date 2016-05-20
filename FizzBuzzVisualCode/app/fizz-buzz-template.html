@@ -1,3 +1,8 @@
 <h2>Fizz Buzz result</h2>
 
-Here is the result of a single pre-defined value {{printoutValue}}
+<p>please specify what value you would like to see <p>
+    <input #inputValue (keyup)="OnValueChanged(inputValue.value)" />
+
+<p>
+Here is the result of a the value you defined: {{printoutValue}}
+<p>

@@ -11,11 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var fizz_buzz_service_1 = require('./fizz-buzz-service');
 var FizzBuzzListComponent = (function () {
-    function FizzBuzzListComponent(service) {
-        this.service = service;
+    function FizzBuzzListComponent(fizzBuzzService) {
+        this.fizzBuzzService = fizzBuzzService;
     }
     FizzBuzzListComponent.prototype.ngOnInit = function () {
-        this.printoutValue = this.service.CalculateValue(3);
+        this.printoutValue = "";
+    };
+    FizzBuzzListComponent.prototype.OnValueChanged = function (testValue) {
+        this.printoutValue = this.fizzBuzzService.CalculateValue(testValue);
     };
     FizzBuzzListComponent = __decorate([
         core_1.Component({

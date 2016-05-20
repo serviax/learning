@@ -1,17 +1,22 @@
 export class FizzBuzzService {
     CalculateValue(value : number)
     {
-        if (value%3 == 0)
-        {
-            return "Fizz";
-        }
-        else if (value%5 == 0)
-        {
-            return "Buzz";
+        var message:string="";
+        if ( value %3==0||value%5==0){
+            if (value%3 == 0)
+            {
+                message = "Fizz";
+            }
+            if (value%5 == 0)
+            {
+                message +="Buzz";
+            }
         }
         else
         {
-            return value.toString();
+            message = value.toString();
         }
+        
+        return message;
     }
 }
