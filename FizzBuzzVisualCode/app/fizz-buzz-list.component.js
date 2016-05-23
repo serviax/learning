@@ -18,7 +18,8 @@ var FizzBuzzListComponent = (function () {
         this.printoutValue = "";
     };
     FizzBuzzListComponent.prototype.OnValueChanged = function (testValue) {
-        this.printoutValue = this.fizzBuzzService.CalculateValue(testValue);
+        var testValueAsNumber = +testValue;
+        this.printoutValue = this.fizzBuzzService.CalculateValue(testValueAsNumber);
     };
     FizzBuzzListComponent = __decorate([
         core_1.Component({

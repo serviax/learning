@@ -21,6 +21,7 @@ export class FizzBuzzListComponent implements OnInit {
         }
     
     OnValueChanged(testValue:string) {
-        this.printoutValue = this.fizzBuzzService.CalculateValue(testValue);
+        var testValueAsNumber:number = +testValue;
+        this.printoutValue = this.fizzBuzzService.CalculateValue(testValueAsNumber);
     }
 }

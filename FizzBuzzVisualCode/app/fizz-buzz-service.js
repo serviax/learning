@@ -6,7 +6,7 @@ var FizzBuzzService = (function () {
         var message = "";
         if (value % 3 == 0 || value % 5 == 0) {
             if (value % 3 == 0) {
-                message = "Fizz";
+                message += "Fizz";
             }
             if (value % 5 == 0) {
                 message += "Buzz";
