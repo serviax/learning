@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace FizzBuzzWebApi.Controllers
 {
     [Route("api/[controller]")]
+    
     public class FizzBuzzController : Controller
     {
+        [EnableCors("AllowSpecificDomains")]
         [HttpGet("{number}")]
         public string Get(int number)
         {

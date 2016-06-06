@@ -25,6 +25,31 @@ namespace FizzBuzzWebApi
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddCors
+             (
+                 options =>
+                 {
+                     options.AddPolicy
+                     (
+                         "AllowSpecificDomains",
+                         builder =>
+                         {
+                    var allowedDomains = new[] { "http://localhost:3000", "https://localhost:5000" };
+
+                    //Load it
+                    builder
+                                 .WithOrigins(allowedDomains)
+                                 .AllowAnyHeader()
+                                 .AllowAnyMethod()
+                                 .AllowCredentials();
+                         }
+                     );
+                 }
+             );
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +59,7 @@ namespace FizzBuzzWebApi
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
         }
     }
 }
