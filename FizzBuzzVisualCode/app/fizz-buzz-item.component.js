@@ -9,27 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var fizz_buzz_service_1 = require('./fizz-buzz-service');
-var FizzBuzzListComponent = (function () {
-    function FizzBuzzListComponent(fizzBuzzService) {
+var fizz_buzz_online_service_1 = require('./fizz-buzz-online-service');
+require('./rxjs-operators');
+var FizzBuzzItemComponent = (function () {
+    function FizzBuzzItemComponent(fizzBuzzService) {
         this.fizzBuzzService = fizzBuzzService;
     }
-    FizzBuzzListComponent.prototype.ngOnInit = function () {
+    FizzBuzzItemComponent.prototype.ngOnInit = function () {
         this.printoutValue = "";
     };
-    FizzBuzzListComponent.prototype.OnValueChanged = function (testValue) {
+    FizzBuzzItemComponent.prototype.OnValueChanged = function (testValue) {
+        var _this = this;
         var testValueAsNumber = +testValue;
-        this.printoutValue = this.fizzBuzzService.CalculateValue(testValueAsNumber);
+        this.fizzBuzzService.getTranslatedValue(testValueAsNumber).subscribe(function (value) { return _this.printoutValue = value; });
+        //this.printoutValue = this.fizzBuzzService.CalculateValue(testValueAsNumber);
     };
-    FizzBuzzListComponent = __decorate([
+    FizzBuzzItemComponent = __decorate([
         core_1.Component({
             selector: 'fizz-buzz-app',
             templateUrl: 'app/fizz-buzz-template.html',
-            providers: [fizz_buzz_service_1.FizzBuzzService]
+            providers: [fizz_buzz_online_service_1.FizzBuzzOnlineService]
         }), 
-        __metadata('design:paramtypes', [fizz_buzz_service_1.FizzBuzzService])
-    ], FizzBuzzListComponent);
-    return FizzBuzzListComponent;
+        __metadata('design:paramtypes', [fizz_buzz_online_service_1.FizzBuzzOnlineService])
+    ], FizzBuzzItemComponent);
+    return FizzBuzzItemComponent;
 }());
-exports.FizzBuzzListComponent = FizzBuzzListComponent;
-//# sourceMappingURL=fizz-buzz-list.component.js.map
+exports.FizzBuzzItemComponent = FizzBuzzItemComponent;
+//# sourceMappingURL=fizz-buzz-item.component.js.map

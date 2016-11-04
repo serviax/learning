@@ -1,5 +1,7 @@
 import { bootstrap }    from '@angular/platform-browser-dynamic';
 
-import { FizzBuzzListComponent } from './fizz-buzz-list.component';
+import { HTTP_PROVIDERS } from '@angular/http';
 
-bootstrap(FizzBuzzListComponent);
+import { FizzBuzzItemComponent } from './fizz-buzz-item.component';
+
+bootstrap(FizzBuzzItemComponent, [HTTP_PROVIDERS]);
