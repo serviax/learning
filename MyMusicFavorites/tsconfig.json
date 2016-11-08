@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "umd",
+        "moduleResolution": "Node",
+        "sourceMap": true,
+        "removeComments": false,
+        "noImplicitAny": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
