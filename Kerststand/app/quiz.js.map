@@ -1,0 +1,1 @@
+{"version":3,"file":"quiz.js","sourceRoot":"","sources":["quiz.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAA0B,eAAe,CAAC,CAAA;AAO1C;IAAA;IAAwB,CAAC;IALzB;QAAC,gBAAS,CAAC;YACP,QAAQ,EAAE,MAAM,CAAC,EAAE;YACnB,QAAQ,EAAE,WAAW;YACrB,WAAW,EAAE,gBAAgB;SAChC,CAAC;;gBAAA;IACsB,eAAC;AAAD,CAAC,AAAzB,IAAyB;AAAZ,gBAAQ,WAAI,CAAA"}
